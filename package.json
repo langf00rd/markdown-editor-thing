@@ -1,6 +1,6 @@
 {
   "name": "markster",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -8,9 +8,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf /dist && npm run build: esm && pm run build:cjs",
+    "build": "rm -rf /dist && npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
-    "build:cjs": "sc --module CommonS --outDir dist/cjs",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
