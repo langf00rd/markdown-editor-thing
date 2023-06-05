@@ -1,6 +1,7 @@
 import { ReactNode, TextareaHTMLAttributes } from "react"
 
 export interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement>, CustomIconProps { }
+// export interface TextEditControlsProps extends HTMLUListElement { }
 
 export interface CustomIconProps {
     boldIcon?: ReactNode | string
