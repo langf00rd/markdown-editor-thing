@@ -11,3 +11,8 @@ export interface CustomIconProps {
     imageIcon?: ReactNode | string
     linkIcon?: ReactNode | string
 }
+
+export interface EditControlItem {
+    icon: ReactNode,
+    action: () => void
+}
