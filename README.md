@@ -7,7 +7,7 @@ A light-weight, unstyled React markdown rich text editor component.
 ## Features
 
 - Extremely lightweight 🪶
-- Customizable icon support for text editor
+- Customizable icon support for text editor 🖌️
 - Completely unstyled, allowing for flexible styling options 🔥
 
 ## Description
