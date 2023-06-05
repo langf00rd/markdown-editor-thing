@@ -64,8 +64,7 @@ const App = () => {
 
 ## Tech Stack
 
-**Client:** React, Storybook
-**Server:** Vite
+React, Typescript, Storybook, Vite
 
 ## Feedback
 
