@@ -1,42 +1,76 @@
-# Markdown editor thing
+# Markdown Editor Thing
 
-Light-weight unstyled React markdown rich editor component
+[![npm version](https://badge.fury.io/js/markdown-editor-thing.svg)](https://badge.fury.io/js/markdown-editor-thing)
+
+A light-weight, unstyled React markdown rich text editor component.
 
 ## Features
 
-- Extremely light-weight 🪶
-- Use your own custom icons on text editor
-- Completely unstyled, you set the rules! 🔥
+- Extremely lightweight 🪶
+- Customizable icon support for text editor
+- Completely unstyled, allowing for flexible styling options 🔥
+
+## Description
+
+The markdown-editor-thing is a React component that provides a simple and intuitive interface for writing markdown.
+
+This component is intentionally unstyled, allowing you to apply your own custom styles and design preferences. Additionally, you have the flexibility to replace the default built-in icons with your own custom icons, text, or images
 
 ## Installation
 
-Install markdown-editor-thing with npm or yarn
-
 ```bash
-  npm install markdown-editor-thing
+npm install markdown-editor-thing
 ```
 
-Or with yarn
+or
 
 ```bash
-  yarn add markdown-editor-thing
+yarn add markdown-editor-thing
 ```
 
-## Authors
+## Usage
 
-- [@langford-dev](https://www.github.com/langford-dev)
-- [@stephenokyere233](https://www.github.com/stephenokyere233)
+### Basic example
+
+```jsx
+import { Textarea } from "markdown-editor-thing";
+
+const App = () => {
+  return <Textarea />;
+};
+```
+
+### Custom icons
+
+You can customize the icons used in the markdown text editor input by passing your own icons, text, or any other valid HTML element as props. Here's an example:
+
+```jsx
+import { Textarea } from "markdown-editor-thing";
+
+const App = () => {
+  return (
+    <Textarea
+      boldIcon={...}
+      italicIcon={...}
+      underlineIcon={...}
+      quoteIcon={...}
+      imageIcon={...}
+      linkIcon={...}
+      ...
+    />
+  );
+};
+```
 
 ## Tech Stack
 
 **Client:** React, Storybook
-
 **Server:** Vite
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Feedback
 
 If you have any feedback, shoot me a text on Twitter [@langford-dev](https://twitter.com/langford_dev) or email @ langfordquarshie21@gmail.com
+
+## License
+
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License.
