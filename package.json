@@ -8,11 +8,12 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf /dist && npm run build:esm && npm run build:cjs",
+    "build": "rm -rf dist && npm run build:esm && npm run build:cjs && npm run copy:css",
     "build:esm": "tsc",
     "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "copy:css": "cp src/index.css dist",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
