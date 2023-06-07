@@ -1,7 +1,7 @@
 import { RenderMd } from "../src";
 
 export default {
-    component: RenderMd
-}
+  component: RenderMd,
+};
 
-export const Default = {}
+export const Default = {};

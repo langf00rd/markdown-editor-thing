@@ -7,41 +7,48 @@ import {
 } from "react-icons/ai";
 import { BsQuote, BsCardImage } from "react-icons/bs";
 import { placeBeforeAfterString } from "../utils/textEdit.util";
-import { EditControlItem } from "../interfaces";
+import { CustomIconProps, EditControlItem } from "../interfaces";
 
-export default function TextEditControls({ props }): JSX.Element {
+export default function TextEditControls({
+  boldIcon,
+  italicIcon,
+  underlineIcon,
+  quoteIcon,
+  imageIcon,
+  linkIcon,
+}: CustomIconProps): JSX.Element {
   const editControlItems: EditControlItem[] = [
     {
-      icon: props.boldIcon || <AiOutlineBold />,
+      icon: boldIcon || <AiOutlineBold />,
       action: () => placeBeforeAfterString("**"),
     },
     {
-      icon: props.italicIcon || <AiOutlineItalic />,
+      icon: italicIcon || <AiOutlineItalic />,
       action: () => placeBeforeAfterString("*"),
     },
     {
-      icon: props.underlineIcon || <AiOutlineUnderline />,
+      icon: underlineIcon || <AiOutlineUnderline />,
       action: () => placeBeforeAfterString("__"),
     },
     {
-      icon: props.quoteIcon || <BsQuote />,
+      icon: quoteIcon || <BsQuote />,
       action: () => {},
     },
     {
-      icon: props.imageIcon || <BsCardImage />,
+      icon: imageIcon || <BsCardImage />,
       action: () => {},
     },
     {
-      icon: props.linkIcon || <AiOutlineLink />,
+      icon: linkIcon || <AiOutlineLink />,
       action: () => {},
     },
   ];
-  console.log(props);
+
   return (
     <ul className="mdt-edit-controls">
       {editControlItems.map((item, index: number) => (
-        <li onClick={item.action} key={index}>
-          <button>{item.icon}</button>
+        <li className="mdt-edit-control-item" onClick={item.action} key={index}>
+          {item.icon}
         </li>
       ))}
     </ul>

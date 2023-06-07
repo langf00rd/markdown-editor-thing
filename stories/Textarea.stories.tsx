@@ -1,17 +1,16 @@
-
-import { Textarea } from '../src'
+import { Textarea } from "../src";
 
 export default {
-    component: Textarea
-}
+  component: Textarea,
+};
 
 export const Default = {
-    args: {
-        boldIcon: 'bold',
-        italicIcon: 'italic',
-        underlineIcon: 'underline',
-        quoteIcon: 'quote',
-        imageIcon: 'image',
-        linkIcon: 'link',
-    }
-}
+  args: {
+    boldIcon: "",
+    italicIcon: "",
+    underlineIcon: "",
+    quoteIcon: "",
+    imageIcon: "",
+    linkIcon: "",
+  },
+};
